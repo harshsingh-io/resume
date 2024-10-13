@@ -1,12 +1,12 @@
-\documentclass[10pt, letterpaper]{article}
+\documentclass[10pt, a4paper]{article}
 
 % Packages:
 \usepackage[
     ignoreheadfoot,
-    top=0.5 cm,
-    bottom=0.2 cm,
-    left=1.5 cm,
-    right=1.5 cm,
+    top=0.8 cm,
+    bottom=1.0 cm,
+    left=1.0 cm,
+    right=1.0 cm,
     footskip=1.0 cm,
 ]{geometry}
 \usepackage{titlesec}
@@ -38,8 +38,7 @@
 
 % Font settings for XeLaTeX or LuaLaTeX
 \usepackage{fontspec}
-\setmainfont{IBM Plex Sans} % Set Calibri as the main font
-
+\setmainfont{IBM Plex Sans} % Set IBM Plex Sans as the main font
 
 % Some settings:
 \raggedright
@@ -135,10 +134,8 @@
   }%
 }
 
-% save the original href command in a new command:
+% Save the original href command in a new command:
 \let\hrefWithoutArrow\href
-
-% new command for external links:
 
 \begin{document}
     \newcommand{\AND}{\unskip
@@ -149,9 +146,10 @@
     \sbox\ANDbox{$|$}
 
     \begin{header}
-        \fontsize{25 pt}{25 pt}\selectfont \textcolor{highlightColor}{Harsh Singh}
+        \fontsize{25 pt}{25 pt}\selectfont \textcolor{highlightColor}{Harsh Singh}\\  % Name with increased line spacing for the title
+    \normalsize \textcolor{highlightColor}{Software Engineer}  % Title in normal size
 
-        \vspace{2 pt}
+    \vspace{0.5pt}  % Slight vertical space before contact information
 \normalsize
 % Start coloring text in blue
     \mbox{\hrefWithoutArrow{mailto:harshsingh704888@gmail.com}{\textcolor{highlightColor}{\faEnvelope\ harshsingh704888@gmail.com}}}% Add mail icon
@@ -186,30 +184,22 @@
             \textbf{RGPV University}, Bachelor of Engineering in Computer Science\end{twocolentry}
 
         \vspace{0.10 cm}
-        \begin{onecolentry}
-            \begin{highlights}
-                \item CGPA: 7.8
-            \end{highlights}
-        \end{onecolentry}
 
-    
+
     \section{\textcolor{highlightColor}{\textit {EXPERIENCE}}}
 
         \begin{twocolentry}{
-          \textit { Jan 2024 – Present}
+          \textit {Jan 2024 – Sep 2024}
         }
-            \textbf{Software Engineer Intern, @BlueMango Labs}\end{twocolentry}
+            \textbf{Software Engineer Intern, BlueMango Labs}\end{twocolentry}
 
         \vspace{0.10 cm}
         \begin{onecolentry}
             \begin{highlights}
-                % \item Spearheaded the redesign of user interfaces for SuperAstro and Kosmic apps, amplifying user retention by 25\%. This involved conducting user research, wireframing, and prototyping to ensure a seamless user experience.
-                \item Implemented Domain-Driven Design to enhance development efficiency by 30\%, improving code quality and maintainability. Worked closely with senior developers to align the design with business goals.
-                \item Integrated advanced backend technologies, including APIs and MQTT brokers, which will support 10x more concurrent users, leading to a significant improvement in app scalability and performance under heavy load.
-                \item Deployed Firebase notifications and new user interaction features, leading to a 35\% increase expected in user activity. These features were key in re-engaging users and driving higher daily active user metrics.
-                \item Streamlined deployment processes using Ruby scripts, reducing system downtime by 50\%, and enabling faster and more reliable releases. This improvement was critical during peak usage periods.
-                \item Directed efforts to implement internationalization features, which will broaden the user base by 40\%. This involved working with localization teams to ensure cultural relevance and language accuracy across different regions.
-            % • Designed and implemented a robust database architecture using Firebase Cloud Firestore, resulting in a 40% improvement in data retrieval speeds and enabling seamless real-time updates for over 1,500 concurrent users.
+                \item \textbf{Enhanced user engagement by 20\%} by spearheading the development of \textbf{SuperAstro}, a mobile astrology app featuring real-time chat, live streaming, and appointment scheduling.
+                \item \textbf{Boosted service reliability by 15\%} by integrating real-time communication using \textbf{MQTT} and \textbf{LiveKit}, and implementing offline message caching with \textbf{SQLite}.
+                \item \textbf{Ensured seamless user-expert interactions} by resolving synchronization issues through optimized \textbf{SQL} queries filtering duplicate messages.
+                \item \textbf{Collaborated with a cross-functional team of 7}, contributing to AWS S3 integration, application theming, and real-time notifications via \textbf{MQTT}.
             \end{highlights}
         \end{onecolentry}
 
@@ -217,11 +207,11 @@
 
         \begin{onecolentry}
     \begin{highlights}
-        \item \textbf{Programming Languages:} Java, Kotlin, Dart, Python.
-        \item \textbf{APIs \& Databases:} RESTful APIs, SOAP, Firebase (FireStore, FCM, Analytics), MySQL, SQLite
-        \item \textbf{Tools/Technologies:} SQL, Spring, Hibernate, Android SDK, Android Studio,  Jetpack Components, Jetpack Compose, Flutter Development, Architecture Patterns (MVVM, Clean), Continuous Integration/Continuous Deployment (CI/CD), Dagger, Hilt
-        \item \textbf{Technical Proficiencies:} Data Structures and Algorithms (DSA), Object-Oriented Programming (OOPs), Database Management Systems (DBMS)
-        \item \textbf{Soft Skills:} Problem Analysis, Team Collaboration, Clear Communication, Initiative and Guidance
+        \item \textbf{Programming Languages:} \textbf{Java}, \textbf{Kotlin}, \textbf{Dart}, \textbf{Python}
+        \item \textbf{APIs \& Databases:} \textbf{RESTful APIs}, SOAP, \textbf{Firebase} (FireStore, FCM, Analytics), \textbf{MySQL}, SQLite
+        \item \textbf{Tools/Technologies:} \textbf{SQL}, \textbf{Spring}, \textbf{Hibernate}, \textbf{Android SDK}, \textbf{Android Studio}, Jetpack Compose, \textbf{Flutter Development}, \textbf{Architecture Patterns} (MVVM, Clean), \textbf{CI/CD}, Dagger, Hilt
+        \item \textbf{Technical Proficiencies:} Data Structures and Algorithms (\textbf{DSA}), Object-Oriented Programming (\textbf{OOP}), Database Management Systems (\textbf{DBMS})
+        \item \textbf{Soft Skills:} Problem Analysis, Team Collaboration, Leadership, Clear Communication, Initiative and Guidance
     \end{highlights}
 \end{onecolentry}
 
@@ -232,21 +222,14 @@
         \begin{twocolentry}{
             \href{https://github.com/harshsingh-io/KanbanBoard}{\textbf{\textcolor{highlightColor}{Link}}}
         }
-            \textbf{Trello Clone | Manage Team Projects}\end{twocolentry}
+            \textbf{KanbanBoard | Manage Team Projects}\end{twocolentry}
 
         \vspace{0.10 cm}
         \begin{onecolentry}
             \begin{highlights}
-                \item \textbf{Project Description:}  Designed and developed a functional Trello clone to facilitate 3x project management efficiency and enhance 30\% team collaboration. 
-\item Implemented real-time task tracking and collaboration features which regulates productivity to 1.5x, mimicking Trello’s core functionalities with improvements in user interface
-design.
-
-
-\item \textbf{Technologies Used:} Android Development: Kotlin, XML
-Database: Firebase Cloud Firestore
-Version Control: Git, GitHub
-Testing: JUnit, Espresso
-Architecture: MVVM
+                \item \textbf{Increased project management efficiency by 3x} by designing and developing a functional \textbf{Trello} clone to enhance team collaboration.
+                \item \textbf{Boosted productivity by 50\%} by implementing real-time task tracking and collaboration features with improved user interface design.
+                \item \textbf{Technologies Used:} Android Development: \textbf{Kotlin}, \textbf{XML}; Database: \textbf{Firebase Cloud Firestore}; Version Control: \textbf{Git}, \textbf{GitHub}; Testing: \textbf{JUnit}, \textbf{Espresso}; Architecture: \textbf{MVVM}
             \end{highlights}
         \end{onecolentry}
 
@@ -260,12 +243,9 @@ Architecture: MVVM
         \vspace{0.10 cm}
         \begin{onecolentry}
             \begin{highlights}
-                 \item \textbf{Project Description:}  Conceptualized and developed a utility app that provides real-time electricity usage statistics, enabling users to reduce energy costs effectively. Integrated smart meter technology to provide users with immediate notifications and consumption analytics, leading to a 20\% reduction in energy expenses.
-
-\item \textbf{Technologies Used:} Android Development: Kotlin, XML
-Backend: Node.js, JavaScript, C
-Database: Firebase
-
+                 \item \textbf{Reduced energy costs by 20\%} by developing a utility app providing real-time electricity usage statistics.
+                 \item \textbf{Achieved 95\% accuracy} in real-time data tracking by integrating smart meter technology for immediate notifications and consumption analytics.
+                 \item \textbf{Technologies Used:} Android Development: \textbf{Kotlin}, \textbf{XML}; Backend: \textbf{Node.js}, \textbf{JavaScript}, \textbf{C}; Database: \textbf{Firebase}
             \end{highlights}
         \end{onecolentry}
 
@@ -276,32 +256,39 @@ Database: Firebase
 \begin{onecolentry}
 
             \begin{highlights}
-    \item \textbf{Won First Prize, CodeEnergia National Hackathon (Sep 2023)} where I led the development of "EcoSync," achieving a 95\% accuracy rate in real-time data tracking, lowering utility costs by 20\%.
-    \hfill
-    \href{https://drive.google.com/file/d/1LlTnIn35ww6L6eBM40ae3QIM9F3puYFN/view?usp=sharing}{\textbf{\textcolor{highlightColor}{Link}}}
-\item Solved \textbf{350+ DSA questions} on various platforms like Leetcode, GFG, HackerRank, and more
-\item Achieved finalist positions in \textbf{4+ hackathons} worked on real-world problems along with the team
-\item Organised 5+ tech events, including \textbf{Google Devefest 2023 Bhopal, Google Cloud Community Day New Delhi 2024.}
-
+    \item \textbf{Winner, CodeEnergia National Hackathon (Sep 2023):} Led the development of \textbf{EcoSync}, achieving a 95\% accuracy rate in real-time data tracking and lowering utility costs by 20\%. \href{https://drive.google.com/file/d/1LlTnIn35ww6L6eBM40ae3QIM9F3puYFN/view?usp=sharing}{\textbf{\textcolor{highlightColor}{Certificate Link}}}
+    \item \textbf{Solved 350+ DSA questions} on platforms like Leetcode, GFG, and Coding Ninja, enhancing problem-solving skills.
+    \item \textbf{Finalist in 4+ hackathons}, working on real-world problems and collaborating with diverse teams.
+    \item \textbf{Organized 5+ tech events}, including Google DevFest 2023 and Google Cloud Community Day New Delhi 2024.
             \end{highlights}
 \end{onecolentry}
 
-    \section{\textcolor{highlightColor}{\textit {CERTIFICATIONS}}}
+    \section{\textcolor{highlightColor}{\textit {EXTRACURRICULAR ACTIVITIES}}}
 
-        \begin{twocolentry} {
-        \href{https://drive.google.com/file/d/1WM-JX7G3dJQckX75zrg9DWdKJYPTGFkC/view}{\textbf{\textcolor{highlightColor}{Link}}}
-        }
-            \textbf{Data Structures and Algorithms with Java:} Aug 2022 – Feb 2023
-            \end{twocolentry}
+    \begin{onecolentry}
+        \begin{highlights}
+            \item \textbf{Android Lead, Google Developer Group - SIRT (Aug 2023 – Aug 2024):} Managed a team of 10 volunteers, increasing club membership by over 500 members; organized 5+ tech events with 550+ participants each.
+            \item \textbf{Student Developer Champion, UiPath (Nov 2023 – Sep 2024):} Developed 3+ automation projects using \textbf{UiPath RPA}; collaborated with 10+ student developers; organized Student Developers Summit with 100+ attendees.
+            \item \textbf{Volunteer, GDG Cloud New Delhi (Aug 2024 – Sep 2024):} Assisted in organizing GDG Cloud events; improved event efficiency by 20\%; promoted cloud technologies in a diverse team setting.
+        \end{highlights}
+    \end{onecolentry}
+   % \section{\textcolor{highlightColor}{\textit {CERTIFICATIONS}}}
 
-        \vspace{0.2 cm}
+      %  \begin{twocolentry} {
+      %  \href{https://www.udemy.com/certificate/UC-89ba28b1-a25a-4f95-b2b1-6d5b26ebe9ab/}{\textbf{\textcolor{highlightColor}{Link}}}
+      %  }
+      %       \textbf{Android 14 \& Kotlin Development | Tutorials.eu} \\
+      %       \textit{May 2023 – Nov 2023}
+      %  \end{twocolentry}
 
-        \begin{twocolentry} {
-        \href{https://www.udemy.com/certificate/UC-89ba28b1-a25a-4f95-b2b1-6d5b26ebe9ab/}{\textbf{\textcolor{highlightColor}{Link}}}
-        }
-             \textbf{Android 14 \& Kotlin Development | Tutorials.eu:} May 2023 – Nov 2023
-        \end{twocolentry}
-           
-
- 
 \end{document}
+
+
+
+
+
+
+
+
+
+
