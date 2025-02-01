@@ -1,24 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Harsh Singh - Resume</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&display=swap"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="mobile-message">
+        <i class="fas fa-info-circle"></i> For the best experience viewing my
+        resume, you can download it using the download button below.
+      </div>
+      <div id="resume">
+        <header>
+          <div class="header-left">
+            <h1>Harsh Singh</h1>
+            <p class="title">Software Engineer</p>
+          </div>
+          <div class="header-right">
+            <p>
+              <a href="mailto:harshsingh704888@gmail.com">
+                <i class="fas fa-envelope"></i> harshsingh704888@gmail.com
+              </a>
+              <a href="tel:+918109222774">
+                <i class="fas fa-phone"></i> +91 8109222774
+              </a>
+            </p>
+            <p>
+              <a href="https://harshsingh-io.github.io/portfolio/">
+                <i class="fas fa-globe"></i> harshsinghh.me
+              </a>
+              <a href="https://linkedin.com/in/harshsingh-io">
+                <i class="fab fa-linkedin"></i> linkedin.com/in/harshsingh-io
+              </a>
+            </p>
+            <p>
+              <a href="https://github.com/harshsingh-io">
+                <i class="fab fa-github"></i> github.com/harshsingh-io
+              </a>
+            </p>
+          </div>
+        </header>
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="description"
-    content="Preview of Harsh Singh's Resume, highlighting experience in software development, mobile applications, and web development.">
-  <title>Harsh Singh - Resume</title>
-  <link rel="stylesheet" type="text/css" href="css/style.css" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+        <section class="section">
+          <h2>EXPERIENCE</h2>
+          <div class="experience-item">
+            <div class="job-header">
+              <h3>Prompt Engineer, Outlier</h3>
+              <span class="date">Sep 2024 - Present</span>
+            </div>
+            <ul>
+              <li>
+                Enhanced model performance by 30% through sophisticated
+                prompting strategies and optimized training datasets for code
+                generation across Java, Python, and Kotlin
+              </li>
+              <li>
+                Developed automated data pipeline processing 100,000+ code
+                samples while maintaining 95% quality standards
+              </li>
+              <li>
+                Reduced language-specific errors by 40% through implementation
+                of cross-language optimization techniques
+              </li>
+            </ul>
+          </div>
 
+          <div class="experience-item">
+            <div class="job-header">
+              <h3>Full Stack Engineer, Persist Ventures</h3>
+              <span class="date">Nov 2024 - Jan 2025</span>
+            </div>
+            <ul>
+              <li>
+                Architected scalable FastAPI backend with microservices,
+                implementing dual database system (PostgreSQL/MongoDB) and AWS
+                S3 integration
+              </li>
+              <li>
+                Developed comprehensive API endpoints for user management and AI
+                chat interface, integrating OpenAI for intelligent fashion
+                recommendations
+              </li>
+              <li>
+                Built intuitive mobile interface with Flutter, implementing
+                real-time chat and wardrobe management features
+              </li>
+            </ul>
+          </div>
 
-  <!-- Open Graph Meta Tags -->
-  <meta property="og:title" content="Harsh Singh's Resume" />
-  <meta property="og:description"
-    content="Mobile Engineer | Ex-SWE Intern at BlueMangoLabs | Android Lead at @Google DSC | @UiPath SDC | GSSOC'24" />
-  <meta property="og:image"
-    content="https://res.cloudinary.com/dwm6mjq77/image/upload/c_thumb,w_200,g_face/v1727349575/Harsh_Singh_Resume_jw95xg.webp" />
-  <meta property="og:url" content="https://harshsinghh.me/resume/" />
-  <meta property="og:type" content="document" />
-</head>
+          <div class="experience-item">
+            <div class="job-header">
+              <h3>Software Engineer Intern, BlueMango Labs</h3>
+              <span class="date">Jan 2024 - Sep 2024</span>
+            </div>
+            <ul>
+              <li>
+                Increased user engagement by 35% through implementation of
+                Firebase notifications and redesigned UIs for SuperAstro mobile
+                app
+              </li>
+              <li>
+                Scaled backend infrastructure to support 10x concurrent users
+                using AWS S3, DynamoDB, and MQTT for real-time communications
+              </li>
+              <li>
+                Led internationalization initiative expanding userbase by 40%
+                while maintaining 99.9% service uptime
+              </li>
+            </ul>
+          </div>
+        </section>
 
-<body>
-  <iframe src="./Harsh_Singh_Resume.pdf" type="" style="width: 100%; height: 100%;"></iframe>
-</body>
+        <section class="section">
+          <h2>SKILLS</h2>
+          <div class="skills-list">
+            <p>
+              <strong>Languages & Frameworks:</strong> Python, Java, Kotlin,
+              Flutter, FastAPI, Android SDK
+            </p>
+            <p>
+              <strong>Cloud & Infrastructure:</strong> AWS (S3, DynamoDB),
+              Firebase, Docker, CI/CD, Git
+            </p>
+            <p>
+              <strong>AI & Backend:</strong> LLM Training, OpenAI Integration,
+              RESTful APIs, MongoDB, PostgreSQL
+            </p>
+            <p>
+              <strong>Architecture & Design:</strong> Microservices, MVVM, Clean
+              Architecture, Domain-Driven Design
+            </p>
+          </div>
+        </section>
+
+        <section class="section">
+          <h2>PROJECTS</h2>
+          <div class="project-item">
+            <div class="project-header">
+              <div>
+                <h3>AI Fashion Stylist Platform</h3>
+                <p class="project-subtitle">
+                  Contract Work with Persist Ventures
+                </p>
+              </div>
+              <div class="project-meta">
+                <div class="date">Oct 2024 - Present</div>
+                <a
+                  href="https://github.com/harshsingh-io/lulu_stylist_app"
+                  class="project-link"
+                  >Link</a
+                >
+              </div>
+            </div>
+            <ul>
+              <li>
+                Engineered full-stack AI fashion platform using Flutter and
+                FastAPI, achieving 40% faster style recommendations through
+                optimized AI algorithms
+              </li>
+              <li>
+                Implemented secure authentication and real-time chat with 99.9%
+                uptime using PostgreSQL/MongoDB architecture
+              </li>
+              <li>
+                <strong>Technologies:</strong> Flutter, FastAPI, OpenAI API,
+                PostgreSQL, MongoDB, AWS S3
+              </li>
+            </ul>
+          </div>
+
+          <div class="project-item">
+            <div class="project-header">
+              <div>
+                <h3>Deep Learning Fruit Analysis System</h3>
+                <p class="project-subtitle">Flipkart Grid 2024 Semi-Finalist</p>
+              </div>
+              <div class="project-meta">
+                <div class="date">Aug 2024 - Oct 2024</div>
+                <a
+                  href="https://github.com/harshsingh-io/fruit_freshness_analysis"
+                  class="project-link"
+                  >Link</a
+                >
+              </div>
+            </div>
+            <ul>
+              <li>
+                Achieved 88% classification accuracy using TensorFlow/VGG16
+                model with data augmentation and transfer learning techniques
+              </li>
+              <li>
+                Deployed model to production serving 1000+ daily requests with
+                95% reliability
+              </li>
+              <li>
+                <strong>Technologies:</strong> Python, TensorFlow, Keras, VGG16,
+                Docker
+              </li>
+            </ul>
+          </div>
+
+          <div class="notable-projects">
+            <strong>Notable Projects:</strong>
+            <a href="https://github.com/harshsingh-io/EcoSync">EcoSync</a> (IoT
+            utility tracking, 95% accuracy),
+            <a href="https://github.com/harshsingh-io/KanbanBoard"
+              >KanbanBoard</a
+            >
+            (Agile task management)
+          </div>
+        </section>
+
+        <section class="section">
+          <h2>ACHIEVEMENTS</h2>
+          <ul>
+            <li>
+              Led winning team at CodeEnergia National Hackathon (2023):
+              Developed EcoSync, achieving 95% tracking accuracy and 20% utility
+              cost reduction
+            </li>
+            <li>
+              Technical Problem Solving: Solved 350+ DSA questions on LeetCode,
+              GeeksForGeeks, and Coding Ninja platforms
+            </li>
+            <li>
+              Hackathon Recognition: Achieved finalist positions in 4+ national
+              hackathons, including Flipkart Grid 2024
+            </li>
+          </ul>
+        </section>
+
+        <section class="section">
+          <h2>EDUCATION</h2>
+          <div class="education-item">
+            <div class="education-header">
+              <h3>Bachelor of Engineering in Computer Science</h3>
+              <span class="date">Jul 2021 - Jun 2025</span>
+            </div>
+            <p>RGPV University, CGPA: 7.8/10</p>
+          </div>
+        </section>
+
+        <footer>
+          <p>
+            <strong>Coding Profile:</strong>
+            <a href="https://leetcode.com/harshsingh-io">LeetCode</a> |
+            <a href="https://auth.geeksforgeeks.org/user/harshsingh704888"
+              >GeeksForGeeks</a
+            >
+            |
+            <a
+              href="https://www.codingninjas.com/codestudio/profile/harshsingh_io"
+              >CodingNinja</a
+            >
+          </p>
+        </footer>
+      </div>
+
+      <div class="download-container">
+        <button id="downloadBtn" class="download-btn">
+          <span class="download-icon"><i class="fas fa-download"></i></span>
+          <span class="button-text">Download Resume</span>
+        </button>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
