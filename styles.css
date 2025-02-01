@@ -142,7 +142,7 @@ header {
 }
 
 .section h2 {
-    color: #333;
+    color: var(--highlight-color);
     border-bottom: 2px solid var(--highlight-color);
     padding-bottom: 5px;
     margin-bottom: 15px;
