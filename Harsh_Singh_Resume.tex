@@ -1,0 +1,210 @@
+\documentclass[10pt, a4paper]{article}
+
+% ATS-friendly packages
+\usepackage[
+    top=0.2in,
+    bottom=0.2in,
+    left=0.4in,
+    right=0.4in
+]{geometry}
+
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage{xcolor}
+
+% Define colors
+\definecolor{darkblue}{RGB}{0, 40, 85}
+\definecolor{lightgray}{RGB}{110, 110, 110}
+
+% Hyperlinks with color and underline
+\usepackage[
+    pdftitle={Harsh Singh Resume},
+    pdfauthor={Harsh Singh},
+    pdfcreator={Harsh Singh},
+    colorlinks=true, 
+    linkcolor=darkblue, 
+    urlcolor=darkblue, 
+    pdfborder={0 0 0}
+    ]{hyperref}
+
+% Custom command for underlined links
+\newcommand{\uhref}[2]{\href{#1}{\underline{\textcolor{darkblue}{#2}}}}
+
+% Prevent any page numbering
+\pagestyle{empty}
+
+% Use Latin Modern Sans - universally available on all LaTeX systems
+\usepackage{lmodern}
+\renewcommand{\familydefault}{\sfdefault}
+
+% Define semi-bold command with fallback to medium
+\makeatletter
+\DeclareRobustCommand{\semibold}[1]{%
+  {\fontseries{sbc}\selectfont #1}%
+}
+\makeatother
+
+% Section formatting with color and prominent lines
+\titleformat{\section}
+  {\large\bfseries\color{darkblue}}
+  {}
+  {0pt}
+  {}
+  [{\color{darkblue}\titlerule[0.8pt]}]
+\titlespacing{\section}{0pt}{12pt}{10pt}
+
+\titleformat{\subsection}{\normalsize\bfseries}{}{0pt}{}
+\titlespacing{\subsection}{0pt}{8pt}{4pt}
+
+% Standard bullet points with better spacing
+\renewcommand{\labelitemi}{$\bullet$}
+\setlist[itemize]{noitemsep, topsep=2pt, leftmargin=*, parsep=2pt}
+
+% No indentation
+\setlength{\parindent}{0pt}
+
+% Custom commands for consistent formatting
+\newcommand{\resumeSubheading}[4]{
+  \vspace{2pt}  % Space from top
+  \noindent
+  \begin{tabular*}{\textwidth}[t]{@{}l@{\extracolsep{\fill}}r@{}}
+    \textbf{#1} \textcolor{lightgray}{$|$} #2 & \textcolor{lightgray}{\small #3} \\
+  \end{tabular*}
+  \vspace{-12pt}  % Reduced space from bottom
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+  \vspace{4pt}  % Space from top for projects
+  \noindent
+  \begin{tabular*}{\textwidth}[t]{@{}l@{\extracolsep{\fill}}r@{}}
+    \textbf{#1} & \textcolor{lightgray}{\small #2} \\
+  \end{tabular*}
+  \vspace{-12pt}
+}
+
+\newcommand{\educationSubheading}[4]{
+  \vspace{2pt}
+  \noindent
+  \begin{tabular*}{\textwidth}[t]{@{}l@{\extracolsep{\fill}}r@{}}
+    \textbf{#1} $|$ \semibold{#2} & \textcolor{lightgray}{\small #3} \\
+  \end{tabular*}
+  \vspace{-12pt} \\
+  #4
+}
+
+\begin{document}
+
+% Header with larger name
+\begin{center}
+    {\huge \textbf{Harsh Singh}} \\[4pt]
+    {\small Bhopal, Madhya Pradesh 462036 $|$ +91 7047272436 $|$ harshsingh704888@gmail.com} \\[3pt]
+    {\small \uhref{https://www.linkedin.com/in/harshsingh-io}{LinkedIn: linkedin.com/in/harshsingh-io} $|$ 
+    \uhref{https://github.com/harshsingh-io}{GitHub: github.com/harshsingh-io} $|$ 
+    \uhref{https://harshsingh.io}{Portfolio: harshsingh.io}}
+\end{center}
+
+\vspace{-14pt}
+
+% % Professional Summary
+
+\section{PROFESSIONAL SUMMARY}
+\vspace{-4pt}
+Results-driven Software Engineer with hands-on experience in full-stack development, AI model optimization, and cloud-based architectures. Proven track record of enhancing system performance by 30-40\% through innovative solutions and delivering scalable applications serving 100,000+ users. Skilled in Python, Java, Kotlin, Flutter, FastAPI, and AWS cloud services with expertise in both mobile and backend development.
+
+\vspace{-6pt}
+
+\section{WORK EXPERIENCE}
+\vspace{-4pt}
+\resumeSubheading
+{AI Engineer}{Outlier $|$ Remote}
+{February 2025 - Present (Full-time Freelance)}{}
+\begin{itemize}
+    \item Optimized multi-language code generation models for Java, Python, and Kotlin through sophisticated prompting strategies and curated training datasets of \semibold{100,000+ samples}, achieving \semibold{30\% improvement} in model accuracy
+    \item \semibold{Engineered an automated data pipeline} to process over 100,000 code samples daily, ensuring 95\% data quality and directly enabling a 30\% improvement in the accuracy of downstream AI models.
+    \item Reduced language-specific errors by \semibold{40\%} through implementation of cross-language optimization techniques and template-based repair strategies
+\end{itemize}
+
+\resumeSubheading
+{Software Engineer}{Persist Ventures $|$ Remote}
+{November 2024 - January 2025}{}
+\begin{itemize}
+    \item Architected scalable \semibold{FastAPI backend} with microservices architecture, implementing dual database system using PostgreSQL for structured data and MongoDB for unstructured data with \semibold{AWS S3} integration
+    \item Developed comprehensive RESTful API endpoints for user management and AI chat interface, integrating \semibold{OpenAI API} for intelligent fashion recommendations with \semibold{40\% faster response times}
+    \item Built intuitive mobile interface using \semibold{Flutter} with BLoC pattern and Freezed for state management, implementing real-time chat and wardrobe management features achieving \semibold{99.9\% uptime}
+\end{itemize}
+
+\resumeSubheading
+{Software Engineer Intern}{BlueMango Labs $|$ Bhopal, India}
+{January 2024 - September 2024}{}
+\begin{itemize}
+    \item Drove a \semibold{35\% increase in user engagement} and retention for the \semibold{SuperAstro} mobile app by strategically implementing Firebase push notifications and redesigning key user interfaces to improve workflow.
+    \item Scaled backend infrastructure to support \semibold{10x concurrent users} using AWS S3, DynamoDB, and MQTT protocol
+    \item Developed complete expert portal with analytics dashboard and consultation management system using Flutter and FastAPI
+\end{itemize}
+
+\vspace{-6pt}
+
+\section{TECHNICAL SKILLS}
+
+\vspace{-2pt}
+
+\textbf{Programming Languages:} Python, Java, Kotlin, SQL (Structured Query Language), JavaScript \\[3pt]
+\textbf{Mobile Development:} Flutter, Android SDK (Software Development Kit) \\[3pt]
+\textbf{Backend Technologies:} FastAPI, RESTful APIs, Microservices Architecture \\[3pt]
+\textbf{Databases:} PostgreSQL, MongoDB, Firebase Firestore, Amazon DynamoDB \\[3pt]
+\textbf{Cloud \& DevOps:} Amazon Web Services (AWS) (S3, DynamoDB, Lambda), Firebase, Docker, CI/CD (Continuous \\ Integration/Continuous Deployment), Git \\[3pt]
+\textbf{AI \& Machine Learning:} TensorFlow, Keras, OpenAI API Integration, Large Language Model (LLM) Training\\[3pt]
+\textbf{Architecture Patterns:} Model-View-ViewModel (MVVM), Clean Architecture, Domain-Driven Design (DDD), BLoC Pattern
+
+\vspace{-6pt}
+
+\section{PROJECTS}
+
+\vspace{-4pt}
+\resumeProjectHeading
+{\uhref{https://github.com/harshsingh-io/lulu_stylist_app}{AI Fashion Stylist Platform} $|$ Contract with Persist Ventures}
+{October 2024 - November 2024}
+\begin{itemize}
+    \item Engineered full-stack AI fashion platform using \semibold{Flutter} and \semibold{FastAPI}, achieving \semibold{40\% faster} style recommendations.
+    \item \textbf{Technologies:} Flutter, FastAPI, OpenAI API, PostgreSQL, MongoDB, AWS S3, Docker, JWT Authentication
+\end{itemize}
+
+\resumeProjectHeading
+{\uhref{https://github.com/harshsingh-io/fruit_freshness_analysis}{Deep Learning Fruit Analysis System} $|$ Flipkart Grid 2024 Semi-Finalist}
+{August 2024 - September 2024}
+\begin{itemize}
+    \item Achieved \semibold{88\% classification accuracy} using TensorFlow and VGG16 model with data augmentation and transfer learning
+    \item \textbf{Technologies:} Python, TensorFlow, Keras, VGG16, Docker, Transfer Learning
+\end{itemize}
+
+
+\textbf{Additional Projects:} \uhref{https://github.com/harshsingh-io/KanbanBoard}{KanbanBoard} (Agile task management), \uhref{https://github.com/harshsingh-io/passport-seva}{Passport Seva} (Android app with Material Design 3)
+
+
+
+\vspace{-6pt}
+
+\section{ACHIEVEMENTS}
+
+\vspace{-2pt}
+
+\begin{itemize}
+    \item Led \semibold{winning team} at CodeEnergia National Hackathon 2023 among \semibold{50+ teams} with EcoSync project
+    \item Solved \semibold{150+ Data Structures and Algorithms} problems on LeetCode, GeeksforGeeks, and Coding Ninja
+    \item Achieved \semibold{semi-finalist} position in Flipkart Grid 2024 hackathon for Deep Learning project
+    \item Selected as \semibold{Android Lead} for Google Developer Group-SIRT, growing membership by \semibold{500+}
+\end{itemize}
+
+\vspace{-6pt}
+\section{EDUCATION}
+
+\vspace{-4pt}
+
+\educationSubheading
+{Bachelor of Technology in Computer Science}
+{CGPA: 7.8/10}
+{July 2021 - June 2025}
+{Sagar Institute of Research \& Technology (SIRT), Bhopal, Madhya Pradesh}
+
+
+\end{document}
