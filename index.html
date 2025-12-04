@@ -1,432 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Harsh Singh - Software Engineer Resume</title>
 
-    <!-- SEO Meta Tags -->
-    <meta
-      name="description"
-      content="Results-driven Software Engineer with expertise in full-stack development, AI model optimization, and cloud architectures. Experience with Python, Java, Kotlin, Flutter, FastAPI, and AWS."
-    />
-    <meta
-      name="keywords"
-      content="Harsh Singh, Software Engineer, Full Stack Developer, AI Engineer, Python, Java, Kotlin, Flutter, FastAPI, AWS, Resume"
-    />
-    <meta name="author" content="Harsh Singh" />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Harsh Singh - Resume</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
 
-    <!-- Open Graph / Facebook -->
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://resume.harshsingh.io/" />
-    <meta
-      property="og:title"
-      content="Harsh Singh - Software Engineer Resume"
-    />
-    <meta
-      property="og:description"
-      content="Results-driven Software Engineer with hands-on experience in full-stack development, AI model optimization, and cloud-based architectures. Proven track record of enhancing system performance by 30-40%."
-    />
-    <meta
-      property="og:image"
-      content="https://raw.githubusercontent.com/harshsingh-io/resume/main/Harsh_Singh_Software_Engineer_Resume.png"
-    />
-    <meta property="og:image:width" content="1200" />
-    <meta property="og:image:height" content="630" />
-    <meta
-      property="og:image:alt"
-      content="Harsh Singh Software Engineer Resume Preview"
-    />
-    <meta property="og:site_name" content="Harsh Singh Resume" />
+    body,
+    html {
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    }
 
-    <!-- Twitter -->
-    <meta property="twitter:card" content="summary_large_image" />
-    <meta property="twitter:url" content="https://resume.harshsingh.io/" />
-    <meta
-      property="twitter:title"
-      content="Harsh Singh - Software Engineer Resume"
-    />
-    <meta
-      property="twitter:description"
-      content="Results-driven Software Engineer with hands-on experience in full-stack development, AI model optimization, and cloud-based architectures."
-    />
-    <meta
-      property="twitter:image"
-      content="https://raw.githubusercontent.com/harshsingh-io/resume/main/Harsh_Singh_Software_Engineer_Resume.png"
-    />
-    <meta
-      property="twitter:image:alt"
-      content="Harsh Singh Software Engineer Resume Preview"
-    />
+    iframe {
+      width: 100%;
+      height: 100%;
+      border: none;
+    }
 
-    <!-- LinkedIn -->
-    <meta
-      property="linkedin:title"
-      content="Harsh Singh - Software Engineer Resume"
-    />
-    <meta
-      property="linkedin:description"
-      content="Results-driven Software Engineer with expertise in Python, Java, Kotlin, Flutter, FastAPI, and AWS cloud services."
-    />
-    <meta
-      property="linkedin:image"
-      content="https://raw.githubusercontent.com/harshsingh-io/resume/main/Harsh_Singh_Software_Engineer_Resume.png"
-    />
+    .download-btn {
+      position: fixed;
+      bottom: 30px;
+      right: 30px;
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      color: white;
+      padding: 16px 28px;
+      border-radius: 50px;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 16px;
+      box-shadow: 0 8px 24px rgba(102, 126, 234, 0.4);
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      transition: all 0.3s ease;
+      z-index: 1000;
+      border: none;
+      cursor: pointer;
+    }
 
-    <!-- Additional Meta -->
-    <link rel="canonical" href="https://resume.harshsingh.io/" />
-    <meta name="robots" content="index, follow" />
-    <meta name="theme-color" content="#002855" />
+    .download-btn:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 12px 32px rgba(102, 126, 234, 0.6);
+      background: linear-gradient(135deg, #764ba2 0%, #667eea 100%);
+    }
 
-    <!-- Favicon -->
-    <link
-      rel="icon"
-      type="image/png"
-      href="https://raw.githubusercontent.com/harshsingh-io/resume/main/Harsh_Singh_Software_Engineer_Resume.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      href="https://raw.githubusercontent.com/harshsingh-io/resume/main/Harsh_Singh_Software_Engineer_Resume.png"
-    />
+    .download-btn:active {
+      transform: translateY(-1px);
+    }
 
-    <link
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
-      rel="stylesheet"
-    />
+    .download-btn i {
+      font-size: 18px;
+    }
 
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <div class="container">
-      <div class="download-section">
-        <a href="#" class="download-btn" onclick="downloadPDF()">
-          <i class="fas fa-download"></i>
-          Download PDF Resume
-        </a>
-      </div>
+    @media (max-width: 768px) {
+      .download-btn {
+        bottom: 20px;
+        right: 20px;
+        padding: 14px 24px;
+        font-size: 14px;
+      }
 
-      <div class="resume-content">
-        <div class="header">
-          <h1 class="name">Harsh Singh</h1>
-          <div class="contact-info">
-            Bhopal, Madhya Pradesh 462036 <span class="separator">|</span> +91
-            7047272436
-            <span class="separator">|</span> harshsingh704888@gmail.com
-          </div>
-          <div class="contact-links">
-            <a href="https://www.linkedin.com/in/harshsingh-io" target="_blank"
-              >LinkedIn: linkedin.com/in/harshsingh-io</a
-            >
-            <span class="separator">|</span>
-            <a href="https://github.com/harshsingh-io" target="_blank"
-              >GitHub: github.com/harshsingh-io</a
-            >
-            <span class="separator">|</span>
-            <a href="https://harshsingh.io" target="_blank"
-              >Portfolio: harshsingh.io</a
-            >
-          </div>
-        </div>
+      .download-btn span {
+        display: none;
+      }
 
-        <div class="section">
-          <h2 class="section-title">Professional Summary</h2>
-          <div class="professional-summary">
-            Results-driven Software Engineer with specialized expertise in
-            Generative AI and full-stack cloud architecture. Experienced in
-            enhancing multi-language code generation models and architecting
-            scalable microservices-based backends with FastAPI and AWS. Skilled
-            in the complete development lifecycle, from AI data curation to
-            building intuitive mobile frontends with Flutter.
-          </div>
-        </div>
+      .download-btn i {
+        margin: 0;
+      }
+    }
+  </style>
+</head>
 
-        <div class="section">
-          <h2 class="section-title">Work Experience</h2>
+<body>
+  <iframe src="https://docs.google.com/document/d/1rAP53nuwWDWRMYsmCUJOEcKGLtdEsEd3/preview" allowfullscreen>
+  </iframe>
 
-          <div class="job">
-            <div class="job-header">
-              <div>
-                <span class="job-title">AI Engineer</span>
-                <span class="company">| Outlier | Remote</span>
-              </div>
-              <div class="date">
-                February 2025 - Present (Full-time Freelance)
-              </div>
-            </div>
-            <ul class="job-bullets">
-              <li>
-                Enhanced the performance of
-                <span class="semibold"
-                  >multi-language code generation models</span
-                >
-                (Java, Python, Kotlin) by designing
-                <span class="semibold">sophisticated prompts</span> and curating
-                a
-                <span class="semibold"
-                  >large-scale instruction-tuning dataset</span
-                >
-                aimed at improving
-                <span class="semibold">model reasoning and accuracy</span>.
-              </li>
-              <li>
-                Served as a
-                <span class="semibold">coding subject matter expert</span> in a
-                <span class="semibold"
-                  >human-in-the-loop AI training pipeline</span
-                >
-                , evaluating and ranking 1000's of AI-generated code samples.
-              </li>
-              <li>
-                Systematically
-                <span class="semibold"
-                  >identified and corrected language-specific errors</span
-                >
-                in model outputs by authoring
-                <span class="semibold">"gold-standard" solutions</span> and
-                <span class="semibold">detailed code rewrites</span>, providing
-                critical feedback to
-                <span class="semibold">reduce model hallucinations</span> and
-                <span class="semibold">improve instruction-following</span>.
-              </li>
-            </ul>
-          </div>
+  <a href="https://docs.google.com/document/d/1rAP53nuwWDWRMYsmCUJOEcKGLtdEsEd3/export?format=pdf" class="download-btn"
+    download="Harsh_Singh_Resume.pdf" target="_blank">
+    <i class="fas fa-download"></i>
+    <span>Download PDF</span>
+  </a>
+</body>
 
-          <div class="job">
-            <div class="job-header">
-              <div>
-                <span class="job-title">Software Engineer</span>
-                <span class="company">| Persist Ventures | Remote</span>
-              </div>
-              <div class="date">November 2024 - January 2025</div>
-            </div>
-            <ul class="job-bullets">
-              <li>
-                Architected scalable
-                <span class="semibold">FastAPI backend</span> with microservices
-                architecture, implementing dual database system using PostgreSQL
-                for structured data and MongoDB for unstructured data with
-                <span class="semibold">AWS S3</span> integration
-              </li>
-              <li>
-                Developed comprehensive RESTful API endpoints for user
-                management and AI chat interface, integrating
-                <span class="semibold">OpenAI API</span> for intelligent fashion
-                recommendations with
-                <span class="semibold">40% faster response times</span>
-              </li>
-              <li>
-                Built intuitive mobile interface using
-                <span class="semibold">Flutter</span> with BLoC pattern and
-                Freezed for state management, implementing real-time chat and
-                wardrobe management features achieving
-                <span class="semibold">99.9% uptime</span>
-              </li>
-            </ul>
-          </div>
-
-          <div class="job">
-            <div class="job-header">
-              <div>
-                <span class="job-title">Software Engineer Intern</span>
-                <span class="company">| BlueMango Labs | Bhopal, India</span>
-              </div>
-              <div class="date">January 2024 - September 2024</div>
-            </div>
-            <ul class="job-bullets">
-              <li>
-                Drove a
-                <span class="semibold">35% increase in user engagement</span>
-                and retention for the
-                <span class="semibold">SuperAstro</span> mobile app by
-                strategically implementing Firebase push notifications and
-                redesigning key user interfaces to improve workflow.
-              </li>
-              <li>
-                Scaled backend infrastructure to support
-                <span class="semibold">10x concurrent users</span> using AWS S3,
-                DynamoDB, and MQTT protocol
-              </li>
-              <li>
-                Developed complete expert portal with analytics dashboard and
-                consultation management system using Flutter and FastAPI
-              </li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="section">
-          <h2 class="section-title">Technical Skills</h2>
-          <div class="skills-grid">
-            <div class="skill-category">
-              <div class="skill-label">Programming Languages:</div>
-              <div>
-                Python, Java, Kotlin, SQL (Structured Query Language),
-                JavaScript
-              </div>
-            </div>
-            <div class="skill-category">
-              <div class="skill-label">Mobile Development:</div>
-              <div>Flutter, Android SDK (Software Development Kit)</div>
-            </div>
-            <div class="skill-category">
-              <div class="skill-label">Backend Technologies:</div>
-              <div>FastAPI, RESTful APIs, Microservices Architecture</div>
-            </div>
-            <div class="skill-category">
-              <div class="skill-label">Databases:</div>
-              <div>
-                PostgreSQL, MongoDB, Firebase Firestore, Amazon DynamoDB
-              </div>
-            </div>
-            <div class="skill-category">
-              <div class="skill-label">Cloud & DevOps:</div>
-              <div>
-                Amazon Web Services (AWS) (S3, DynamoDB, Lambda), Firebase,
-                Docker, CI/CD, Git
-              </div>
-            </div>
-            <div class="skill-category">
-              <div class="skill-label">AI & Machine Learning:</div>
-              <div>
-                Reinforcement Learning from Human Feedback (RLHF),
-                Instruction-Tuning, Prompt Engineering, LLM Evaluation &
-                Red-Teaming, AI Training Dataset Curation, OpenAI API
-                Integration
-              </div>
-            </div>
-            <div class="skill-category">
-              <div class="skill-label">Architecture Patterns:</div>
-              <div>
-                Model-View-ViewModel (MVVM), Clean Architecture, Domain-Driven
-                Design (DDD), BLoC Pattern
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="section">
-          <h2 class="section-title">Projects</h2>
-
-          <div class="project">
-            <div class="project-header">
-              <div>
-                <a
-                  href="https://github.com/harshsingh-io/lulu_stylist_app"
-                  class="project-link"
-                  target="_blank"
-                  >AI Fashion Stylist Platform</a
-                >
-                | Contract with Persist Ventures
-              </div>
-              <div class="date">October 2024 - November 2024</div>
-            </div>
-            <ul class="project-bullets">
-              <li>
-                Engineered full-stack AI fashion platform using
-                <span class="semibold">Flutter</span> and
-                <span class="semibold">FastAPI</span>, achieving
-                <span class="semibold">40% faster</span> style recommendations.
-              </li>
-              <li>
-                <span class="tech-stack">Technologies:</span> Flutter, FastAPI,
-                OpenAI API, PostgreSQL, MongoDB, AWS S3, Docker, JWT
-                Authentication
-              </li>
-            </ul>
-          </div>
-
-          <div class="project">
-            <div class="project-header">
-              <div>
-                <a
-                  href="https://github.com/harshsingh-io/fruit_freshness_analysis"
-                  class="project-link"
-                  target="_blank"
-                  >Deep Learning Fruit Analysis System</a
-                >
-                | Flipkart Grid 2024 Semi-Finalist
-              </div>
-              <div class="date">August 2024 - September 2024</div>
-            </div>
-            <ul class="project-bullets">
-              <li>
-                Achieved
-                <span class="semibold">88% classification accuracy</span> using
-                TensorFlow and VGG16 model with data augmentation and transfer
-                learning
-              </li>
-              <li>
-                <span class="tech-stack">Technologies:</span> Python,
-                TensorFlow, Keras, VGG16, Docker, Transfer Learning
-              </li>
-            </ul>
-          </div>
-
-          <div style="margin-top: 15px">
-            <span class="tech-stack">Additional Projects:</span>
-            <a
-              href="https://github.com/harshsingh-io/KanbanBoard"
-              class="project-link"
-              target="_blank"
-              >KanbanBoard</a
-            >
-            (Agile task management),
-            <a
-              href="https://github.com/harshsingh-io/passport-seva"
-              class="project-link"
-              target="_blank"
-              >Passport Seva</a
-            >
-            (Android app with Material Design 3)
-          </div>
-        </div>
-
-        <div class="section">
-          <h2 class="section-title">Achievements</h2>
-          <ul class="achievements-list">
-            <li>
-              Led <span class="semibold">winning team</span> at CodeEnergia
-              National Hackathon 2023 among
-              <span class="semibold">50+ teams</span> with EcoSync project
-            </li>
-            <li>
-              Solved
-              <span class="semibold">150+ Data Structures and Algorithms</span>
-              problems on LeetCode, GeeksforGeeks, and Coding Ninja
-            </li>
-            <li>
-              Achieved <span class="semibold">semi-finalist</span> position in
-              Flipkart Grid 2024 hackathon for Deep Learning project
-            </li>
-            <li>
-              Selected as <span class="semibold">Android Lead</span> for Google
-              Developer Group-SIRT, growing membership by
-              <span class="semibold">500+</span>
-            </li>
-          </ul>
-        </div>
-
-        <div class="section">
-          <h2 class="section-title">Education</h2>
-          <div class="education-item">
-            <div class="education-header">
-              <div>
-                <span class="degree"
-                  >Bachelor of Technology in Computer Science</span
-                >
-                <span class="gpa">| CGPA: 7.8/10</span>
-              </div>
-              <div class="date">July 2021 - June 2025</div>
-            </div>
-            <div class="institution">
-              Sagar Institute of Research & Technology (SIRT), Bhopal, Madhya
-              Pradesh
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <script src="script.js"></script>
-  </body>
 </html>
