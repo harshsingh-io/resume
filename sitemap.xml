@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  <url>
+    <loc>https://resume.harshsingh.io/</loc>
+    <lastmod>2025-12-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://resume.harshsingh.io/assets/open_graph_image.png</image:loc>
+      <image:title>Harsh Singh - Software Engineer Resume</image:title>
+      <image:caption>Professional resume of Harsh Singh, SDE-1 at MathonGo</image:caption>
+    </image:image>
+  </url>
+</urlset>
